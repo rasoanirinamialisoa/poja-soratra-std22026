@@ -105,3 +105,7 @@ Outputs:
   ApiUrl:
     Description: API Gateway endpoint URL
     Value: !GetAtt ApiUrlSSM.Value
+
+s3:
+  bucket:
+    name: preprod-bucket-poja-soratra-std22026-bucket-o22j7vunx9gm
