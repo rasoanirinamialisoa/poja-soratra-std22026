@@ -28,12 +28,11 @@ jobs:
           secrets: ${{ toJSON(secrets) }}
           region: ${{ env.AWS_REGION }}
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v3
         with:
           java-version: '21'
           distribution: 'corretto'
       - run: chmod +x gradlew
-      - run: chmod +x ./gradlew test
       - run: ./gradlew test
 
       
