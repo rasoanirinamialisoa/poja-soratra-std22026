@@ -33,6 +33,7 @@ jobs:
           java-version: '21'
           distribution: 'corretto'
       - run: chmod +x gradlew
+      - run: chmod +x ./gradlew test
       - run: ./gradlew test
 
       
